@@ -1,2 +1,3 @@
-# krayt
-test for krayt
+# Test task for Krayt
+
+Run fof building: npm dev
