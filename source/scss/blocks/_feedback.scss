@@ -1,0 +1,57 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: min-content 80px;
+  grid-template-areas:  "quote quote"
+                        "picture author";
+  gap: 22px 20px;
+
+  width: 360px;
+  margin: 0;
+  padding: 36px 40px;
+
+  background-color: #f7fafc;
+
+  &--white {
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.feedback__quote {
+  grid-area: quote;
+
+  margin: 0;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.feedback__picture {
+  grid-area: picture;
+
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+}
+
+.feedback__author {
+  grid-area: author;
+  align-self: center;
+
+  font-style: normal;
+
+  &--name {
+    color: $text-color-2;
+    font-family: Dosis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &--company {
+    font-weight: 300;
+    line-height: 24px;
+  }
+}

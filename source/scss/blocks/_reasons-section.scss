@@ -1,0 +1,67 @@
+.reasons-section {
+  padding-top: 175px;
+  padding-bottom: 169px;
+
+  background-image: url('../img/iphone.png');
+  background-position: left bottom 18px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+.reasons-section__title {
+  margin: 0;
+  margin-left: 585px;
+  margin-bottom: 23px;
+  max-width: 520px;
+
+}
+
+.reasons-section__description {
+  margin: 0;
+  margin-left: 585px;
+  max-width: 520px;
+
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.reasons-section__description:nth-of-type(1) {
+  margin-bottom: 71px;
+}
+
+.reasons-section__description:nth-of-type(2) {
+  margin-bottom: 27px;
+}
+
+.reasons-section__list {
+  margin: 0;
+  margin-left: 585px;
+  padding: 0;
+
+  color: $text-color-1;
+  line-height: 24px;
+
+  list-style: none;
+}
+
+.reasons-section__item {
+  display: flex;
+  align-items: center;
+}
+
+.reasons-section__item:not(:last-of-type) {
+  margin-bottom: 11px;
+}
+
+.reasons-section__item::before {
+  content:"";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15"%3E%3Cpath d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"%3E%3C/path%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,71 @@
+.main-section {
+  padding-top: 110px;
+  padding-bottom: 219px;
+
+  background: url('../img/iphones.png') top 46px right no-repeat,
+              linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+}
+
+.main-section__title {
+  max-width: 500px;
+  margin: 0;
+  margin-right: auto;
+  margin-bottom: 21px;
+
+  color: $text-color-3;
+  font-family: Dosis;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.main-section__description {
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 13px;
+  
+  color: $text-color-3;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.main-section__features {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  color: $text-color-3;
+  line-height: 24px;
+
+  list-style: none;
+}
+
+.main-section__features-item {
+  display: flex;
+  align-items: center;
+}
+
+.main-section__features-item:not(:last-of-type) {
+  margin-bottom: 11px;
+}
+
+.main-section__features-item::before {
+  content:"";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15"%3E%3Cpath fill="%23ffffff" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"%3E%3C/path%3E%3C/svg%3E');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-section__button {
+  width: 192px;
+  height: 40px;
+  margin-left: 3px;
+  
+  border-radius: 20px;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+}

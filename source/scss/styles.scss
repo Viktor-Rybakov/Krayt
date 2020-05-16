@@ -1,0 +1,30 @@
+@import "variables";
+
+@import "normalize";
+@import "global";
+@import "fonts";
+@import "visually-hidden";
+@import "media-query";
+
+@import "blocks/fix-container";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/main-section";
+@import "blocks/feature-section";
+@import "blocks/features-list";
+@import "blocks/feature";
+@import "blocks/reasons-section";
+@import "blocks/screenshots-section";
+@import "blocks/screenshots-slider";
+@import "blocks/offer-section";
+@import "blocks/offer";
+@import "blocks/video-section";
+@import "blocks/feedback-section";
+@import "blocks/feedback-slider";
+@import "blocks/feedback";
+@import "blocks/download-section";
+@import "blocks/download";
+@import "blocks/footer";
+@import "blocks/socials";

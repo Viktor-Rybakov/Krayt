@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-right: 42px;
+  padding: 0;
+
+  list-style: none;
+
+  color: $text-color-3;
+}
+
+.menu__list-item:not(:last-of-type) {
+  margin-right: 56px;
+}
+
+.menu__link {
+  &:focus {
+    outline: 2px solid #ffffff;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__button {
+  width: 153px;
+  height: 35px;
+  border-radius: 17.5px;
+}

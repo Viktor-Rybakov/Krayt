@@ -1,0 +1,34 @@
+.offer-section {
+  padding-top: 188px;
+  padding-bottom: 120px;
+}
+
+.offer-section__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.offer-section__description {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 76px;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.offer-section__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: $button-background-color-1;
+  
+  font-weight: 500;
+  color: $button-text-color-1;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 2px #f21780, 0 0 0 5px #ffffff;
+  }
+}

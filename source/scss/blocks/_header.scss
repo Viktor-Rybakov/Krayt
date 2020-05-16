@@ -1,0 +1,17 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-image: linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+
+  margin-right: auto;
+}
