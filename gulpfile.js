@@ -111,6 +111,11 @@ function icons(){
     .pipe(dest('./build'));
 }
 
+function video(){
+  return src('./source/video/**/*.mp4')
+    .pipe(dest('./build/video'));
+}
+
 function clean() {
   return del(['build/*']);
 }
@@ -126,7 +131,8 @@ exports.dev = series(
     series (
       images,
       webpImages
-    )
+    ),
+    video
   ),
   watching
 );
