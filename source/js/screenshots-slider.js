@@ -1,7 +1,7 @@
 'use strict'
 
 const SCREENSHOTS_SLIDER = document.querySelector('.js-screenshots-slider');
-const SCREENSHOTS_LIST = SCREENSHOTS_SLIDER.querySelectorAll('.js-screenshots-slider__list-item')
+const SCREENSHOTS_LIST = SCREENSHOTS_SLIDER.querySelectorAll('.js-screenshots-slider__list-item');
 const SCREENSHOTS_NUMBER = SCREENSHOTS_LIST.length;
 const SCREENSHOTS_NEXT = SCREENSHOTS_SLIDER.querySelector('.js-screenshots-slider__button--forward');
 const SCREENSHOTS_PREV = SCREENSHOTS_SLIDER.querySelector('.js-screenshots-slider__button--preview');
