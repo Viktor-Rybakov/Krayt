@@ -4,19 +4,38 @@
   width: 1200px;
   margin-left: -30px;
   margin-right: -30px;
+
+  @include desktop {
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include max-width(860px) {
+    width: 400px;
+  }
+
+  @include max-width(420px) {
+    width: 280px;
+  }
 }
 
 .feedback-slider__wrapper {
-  position: relative;
   width: 100%;
 
   overflow-x: hidden;
   padding: 30px;
+
+  @include desktop {
+    padding: 30px 20px;
+  }
+
+  @include max-width(420px) {
+    padding: 0;
+  }
 }
 
 .feedback-slider__list {
-  position: relative;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -36,11 +55,21 @@
   &--white .feedback{
     background-color: #ffffff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
+    @include desktop {
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @include max-width(420px) {
+      background-color: #f5f5f5;
+      box-shadow: none;
+    }
   }
 }
 
 .feedback-slider__button {
   position: absolute;
+  z-index: 5;
   top: 50%;
   transform: translateY(-50%);
 
@@ -61,10 +90,30 @@
 
   &--preview {
     left: -60px;
+
+    @include max-width(1400px) {
+      left: 10px;
+    }
+    @include desktop {
+      left: -35px;
+    }
+    @include max-width(500px) {
+      left: 10px;
+    }
   }
 
   &--forward {
     right: -60px;
+
+    @include max-width(1400px) {
+      right: 10px;
+    }
+    @include desktop {
+      right: -35px;
+    }
+    @include max-width(500px) {
+      right: 10px;
+    }
   }
 
   &:focus,

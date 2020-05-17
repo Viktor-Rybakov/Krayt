@@ -11,6 +11,15 @@
   padding: 36px 40px;
 
   background-color: #f7fafc;
+
+  @include max-width(420px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas:  "quote"
+                          "picture"
+                          "author";
+    width: 280px;
+  }
 }
 
 .feedback__quote {
@@ -29,6 +38,10 @@
   height: 80px;
 
   border-radius: 50%;
+
+  @include max-width(420px) {
+    justify-self: center;
+  }
 }
 
 .feedback__author {
@@ -36,6 +49,10 @@
   align-self: center;
 
   font-style: normal;
+
+  @include max-width(420px) {
+    justify-self: center;
+  }
 
   &--name {
     color: $text-color-2;

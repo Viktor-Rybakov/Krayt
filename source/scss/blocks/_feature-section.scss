@@ -1,9 +1,17 @@
 .features-section {
   padding-top: 117px;
+
+  @include tablet {
+    padding-top: 50px;
+  }
 }
 
 .features-section__container {
   padding-bottom: 60px;
 
-  border-bottom: 2px solid #eeeeee;;
+  border-bottom: 2px solid #eeeeee;
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
 }

@@ -6,7 +6,26 @@
   background-position: left bottom 18px;
   background-repeat: no-repeat;
   background-size: auto;
+  
+  @include max-width(1600px) {
+    background-position: left -200px bottom 18px;
+  }
+  
+  @include desktop {
+    padding-top: 80px;
+    padding-bottom: 50px;
 
+    background-position: left -150px center;
+    background-size: auto 90%;
+  }
+  
+  @include max-width(860px) {
+    background-position: left -200px center;
+  }
+  
+  @include tablet {
+    background: none;
+  }
 }
 
 .reasons-section__title {
@@ -15,6 +34,16 @@
   margin-bottom: 23px;
   max-width: 520px;
 
+  @include desktop {
+    margin-left: 400px;
+  }
+
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
 }
 
 .reasons-section__description {
@@ -24,6 +53,17 @@
 
   font-weight: 300;
   line-height: 24px;
+
+  @include desktop {
+    margin-left: 400px;
+  }
+
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
 }
 
 .reasons-section__description:nth-of-type(1) {
@@ -43,6 +83,17 @@
   line-height: 24px;
 
   list-style: none;
+
+  @include desktop {
+    margin-left: 400px;
+  }
+
+  @include tablet {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 }
 
 .reasons-section__item {

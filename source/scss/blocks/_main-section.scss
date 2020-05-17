@@ -4,6 +4,22 @@
 
   background: url('../img/iphones.png') top 46px right no-repeat,
               linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+
+  @include desktop {
+    background: url('../img/iphones.png') top 100px right -200px no-repeat,
+                linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+  }
+
+  @include tablet-ipad {
+    background: url('../img/iphones.png') top 100px right -380px no-repeat,
+                linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+  }
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+  }
 }
 
 .main-section__title {
@@ -17,6 +33,16 @@
   font-size: 54px;
   font-weight: 600;
   line-height: 60px;
+  
+  @include tablet {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+  }
 }
 
 .main-section__description {
@@ -27,6 +53,13 @@
   color: $text-color-3;
   font-weight: 300;
   line-height: 24px;
+
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
 }
 
 .main-section__features {
@@ -38,6 +71,12 @@
   line-height: 24px;
 
   list-style: none;
+
+  @include tablet {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .main-section__features-item {
@@ -68,4 +107,9 @@
   
   border-radius: 20px;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

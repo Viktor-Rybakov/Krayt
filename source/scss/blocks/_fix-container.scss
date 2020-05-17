@@ -2,4 +2,14 @@
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+
+  @include desktop {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  @include tablet {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

@@ -3,6 +3,10 @@
   padding-bottom: 50px;
 
   background-color: $background-color-2;
+
+  @include tablet {
+    padding-top: 70px;
+  }
 }
 
 .screenshots-section__title {

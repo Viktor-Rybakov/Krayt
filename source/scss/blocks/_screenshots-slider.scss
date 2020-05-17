@@ -28,9 +28,22 @@
   &[data-slide-number="1"] {
     transform: translate(-570px, -50%);
     z-index: 1;
-
+    
     width: 262px;
     height: 280px;
+    
+    @include desktop {
+      transform: translate(-420px, -50%);
+    }
+    @include tablet-ipad {
+      transform: translate(-370px, -50%);
+    }
+    @include tablet {
+      transform: translate(-270px, -50%);
+    }
+    @include max-width(600px) {
+      display: none;
+    }
 
     & .screenshots-slider__image {
       object-position: top left;
@@ -40,9 +53,22 @@
   &[data-slide-number="2"] {
     transform: translate(-502px, -50%);
     z-index: 2;
-
+    
     width: 262px;
     height: 360px;
+    
+    @include desktop {
+      transform: translate(-402px, -50%);
+    }
+    @include tablet-ipad {
+      transform: translate(-352px, -50%);
+    }
+    @include tablet {
+      transform: translate(-252px, -50%);
+    }
+    @include phone {
+      display: none;
+    }
 
     & .screenshots-slider__image {
       object-position: top left;
@@ -52,9 +78,22 @@
   &[data-slide-number="3"] {
     transform: translate(-375px, -50%);
     z-index: 3;
-
+    
     width: 262px;
     height: 440px;
+    
+    @include desktop {
+      transform: translate(-325px, -50%);
+    }
+    @include tablet-ipad {
+      transform: translate(-275px, -50%);
+    }
+    @include tablet {
+      transform: translate(-225px, -50%);
+    }
+    @include max-width(500px) {
+      display: none;
+    }
 
     & .screenshots-slider__image {
       object-position: top left;
@@ -68,17 +107,34 @@
     width: 360px;
     height: 500px;
 
+    @include max-width(500px) {
+      width: 320px;
+    }
+
     & .screenshots-slider__image {
       object-position: top left;
     }
   }
 
   &[data-slide-number="5"] {
-    transform: translate(112px, -50%);
+    transform: translate(113px, -50%);
     z-index: 3;
-
+    
     width: 262px;
     height: 440px;
+    
+    @include desktop {
+      transform: translate(63px, -50%);
+    }
+    @include tablet-ipad {
+      transform: translate(13px, -50%);
+    }
+    @include tablet {
+      transform: translate(-37px, -50%);
+    }
+    @include max-width(500px) {
+      display: none;
+    }
 
     & .screenshots-slider__image {
       object-position: top right;
@@ -88,9 +144,22 @@
   &[data-slide-number="6"] {
     transform: translate(240px, -50%);
     z-index: 2;
-
+    
     width: 262px;
     height: 360px;
+    
+    @include desktop {
+      transform: translate(140px, -50%);
+    }
+    @include tablet-ipad {
+      transform: translate(90px, -50%);
+    }
+    @include tablet {
+      transform: translate(-10px, -50%);
+    }
+    @include phone {
+      display: none;
+    }
 
     & .screenshots-slider__image {
       object-position: top right;
@@ -103,6 +172,19 @@
 
     width: 262px;
     height: 280px;
+    
+    @include desktop {
+      transform: translate(158px, -50%);
+    }
+    @include tablet-ipad {
+      transform: translate(108px, -50%);
+    }
+    @include tablet {
+      transform: translate(8px, -50%);
+    }
+    @include max-width(600px) {
+      display: none;
+    }
 
     & .screenshots-slider__image {
       object-position: top right;
@@ -120,6 +202,7 @@
 
 .screenshots-slider__button {
   position: absolute;
+  z-index: 5;
   top: 50%;
   transform: translateY(-50%);
 
@@ -140,10 +223,18 @@
 
   &--preview {
     left: -90px;
-  }
 
+    @include max-width(1400px) {
+      left: 10px;
+    }
+  }
+  
   &--forward {
     right: -90px;
+    
+    @include max-width(1400px) {
+      right: 10px;
+    }
   }
 
   &:focus,

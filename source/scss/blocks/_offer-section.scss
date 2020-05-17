@@ -1,6 +1,11 @@
 .offer-section {
   padding-top: 188px;
   padding-bottom: 120px;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .offer-section__title {
@@ -24,11 +29,48 @@
 }
 
 .offer-section__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-template-rows: min-content;
+  grid-template-areas: "offer1 offer2 offer3 offer4";
   justify-content: space-between;
-
+  
   margin: 0;
   padding: 0;
-
+  
   list-style: none;
+  
+  @include desktop {
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(2, min-content);
+    grid-template-areas:  "offer1 offer2"
+                          "offer3 offer4";
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  @include max-width(620px) {
+    grid-template-columns: min-content;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-areas:  "offer1"
+                          "offer2"
+                          "offer3"
+                          "offer4";
+  }
+}
+
+.offer-section__list-item:nth-of-type(1) {
+  grid-area: offer1;
+}
+
+.offer-section__list-item:nth-of-type(2) {
+  grid-area: offer2;
+}
+
+.offer-section__list-item:nth-of-type(3) {
+  grid-area: offer3;
+}
+
+.offer-section__list-item:nth-of-type(4) {
+  grid-area: offer4;
 }

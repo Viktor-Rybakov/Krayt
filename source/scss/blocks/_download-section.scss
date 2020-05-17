@@ -1,8 +1,13 @@
 .download-section {
   padding-top: 118px;
-  padding-bottom: 119px;
+  padding-bottom: 89px;
 
   background: linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 .download-section__title {
@@ -16,10 +21,20 @@
 
 .download-section__list {
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  
   margin: 0;
+  margin-right: -30px;
   padding: 0;
 
   list-style: none;
+
+
+}
+
+.download-section__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
