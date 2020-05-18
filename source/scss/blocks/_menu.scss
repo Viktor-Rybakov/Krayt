@@ -2,6 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 35px 30px rgba(0, 0, 0, 0.5);
+
+    transition: 2.3s;
+    opacity: 0;
+
+    &--open {
+      display: flex;
+      opacity: 1;
+    }
+  }
 }
 
 .menu__list {
@@ -17,10 +35,23 @@
   list-style: none;
 
   color: $text-color-3;
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .menu__list-item:not(:last-of-type) {
   margin-right: 56px;
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .menu__link {

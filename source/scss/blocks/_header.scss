@@ -3,6 +3,17 @@
   padding-bottom: 30px;
 
   background-image: linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
+
+  @include tablet {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .header__container {
@@ -12,6 +23,58 @@
 
 .header__logo {
   display: block;
-
+  
   margin-right: auto;
+}
+
+.header__logo-img {
+  display: block;
+  width: 128px;
+}
+
+.header__menu {
+  @include tablet {
+    position: absolute;
+    z-index: 100;
+
+    left: 0;
+    right: 0;
+    top: 100px;
+
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.header__button {
+  display: none;
+  
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+    background: none;
+
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 0 2px #f21780, 0 0 0 5px #ffffff;
+    }
+
+    &--disabled {
+      display: none;
+    }
+  }
 }
