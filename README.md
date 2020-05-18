@@ -1,3 +1,6 @@
-# Test task for Krayt
+# Тестовое задание
 
-Run fof building: npm run dev
+##Сборка проекта
+`npm run dev`
+
+Собранная версия находится вот [тут](https://viktor-rybakov.github.io/public/krayt/index.html)
