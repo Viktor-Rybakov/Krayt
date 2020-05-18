@@ -46,6 +46,7 @@
   list-style: none;
 
   transition: 0.2s;
+  will-change: transform;
 }
 
 .feedback-slider__list-item {

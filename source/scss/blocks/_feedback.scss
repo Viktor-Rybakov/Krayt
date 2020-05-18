@@ -37,11 +37,15 @@
   width: 80px;
   height: 80px;
 
-  border-radius: 50%;
-
   @include max-width(420px) {
     justify-self: center;
   }
+}
+
+.feedback__img {
+  display: block;
+
+  border-radius: 50%;
 }
 
 .feedback__author {

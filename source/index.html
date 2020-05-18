@@ -27,7 +27,16 @@
 <body>
 <header class="header js-header">
   <div class="fix-container header__container">
-    <img class="header__logo" src="img/logo.png" alt="Company logo">
+    <picture class="header__logo">
+      <source type="image/webp"
+              srcset="img/webp/logo-128.webp 1x,
+                      img/webp/logo-256.webp 2x">
+      <img  class="header__logo-img" 
+            src="img/logo-128.png"
+            srcset="img/logo-256.png 2x"
+            width="128"
+            alt="Company logoe">
+    </picture>
 
     <nav class="menu js-menu header__menu" id="menu">
       <ul class="menu__list">
@@ -166,31 +175,87 @@
       <div class="screenshots-slider scriinshot-section__slider js-screenshots-slider">
         <ul class="screenshots-slider__list">
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="1">
-            <img class="screenshots-slider__image" src="img/slider-image_1.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_1-362.webp 1x,
+                              img/webp/slider-image_1-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_1-362.jpg"
+                    srcset="img/slider-image_1-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
 
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="2">
-            <img class="screenshots-slider__image" src="img/slider-image_2.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_2-362.webp 1x,
+                              img/webp/slider-image_2-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_2-362.jpg"
+                    srcset="img/slider-image_2-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
 
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="3">
-            <img class="screenshots-slider__image" src="img/slider-image_3.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_3-362.webp 1x,
+                              img/webp/slider-image_3-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_3-362.jpg"
+                    srcset="img/slider-image_3-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
 
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="4">
-            <img class="screenshots-slider__image" src="img/slider-image_4.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_4-362.webp 1x,
+                              img/webp/slider-image_4-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_4-362.jpg"
+                    srcset="img/slider-image_4-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
 
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="5">
-            <img class="screenshots-slider__image" src="img/slider-image_5.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_5-362.webp 1x,
+                              img/webp/slider-image_5-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_5-362.jpg"
+                    srcset="img/slider-image_5-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
 
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="6">
-            <img class="screenshots-slider__image" src="img/slider-image_6.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_6-362.webp 1x,
+                              img/webp/slider-image_6-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_6-362.jpg"
+                    srcset="img/slider-image_6-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
 
           <li class="screenshots-slider__list-item js-screenshots-slider__list-item" data-slide-number="7">
-            <img class="screenshots-slider__image" src="img/slider-image_7.jpg" alt="Screenshot of interface">
+            <picture class="screenshots-slider__picture">
+              <source type="image/webp"
+                      srcset="img/webp/slider-image_7-362.webp 1x,
+                              img/webp/slider-image_7-724.webp 2x">
+              <img  class="screenshots-slider__img" 
+                    src="img/slider-image_7-362.jpg"
+                    srcset="img/slider-image_7-724.jpg 2x"
+                    alt="Screenshot of interface">
+            </picture>
           </li>
         </ul>
 
@@ -331,9 +396,17 @@
             <li class="feedback-slider__list-item">
               <blockquote class="feedback">
                 <p class="feedback__quote">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
-
-                <img class="feedback__picture" src="img/bullock.jpg" alt="Alexandra Bullock">
-
+                <picture class="feebback__picture">
+                  <source type="image/webp"
+                          sizes="80px"
+                          srcset="img/webp/bullock-80.webp 80w,
+                                  img/webp/bullock-160.webp 160w">
+                  <img  class="feedback__img" 
+                        src="img/bullock-80.jpg"
+                        sizes="80px"
+                        srcset="img/bullock-160.jpg 160w"
+                        alt="Alexandra Bullock">
+                </picture>
                 <cite class="feedback__author">
                   <span class="feedback__author--name">Alexandra Bullock</span><br>
                   <span class="feedback__author--company">Apple Inc.</span>
@@ -344,9 +417,17 @@
             <li class="feedback-slider__list-item feedback-slider__list-item--white">
               <blockquote class="feedback">
                 <p class="feedback__quote">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
-
-                <img class="feedback__picture" src="img/sebastian.jpg" alt="Gary Sebastian">
-
+                <picture class="feebback__picture">
+                  <source type="image/webp"
+                          sizes="80px"
+                          srcset="img/webp/sebastian-80.webp 80w,
+                                  img/webp/sebastian-160.webp 160w">
+                  <img  class="feedback__img" 
+                        src="img/sebastian-80.jpg"
+                        sizes="80px"
+                        srcset="img/sebastian-160.jpg 160w"
+                        alt="Gary Sebastian">
+                </picture>
                 <cite class="feedback__author">
                   <span class="feedback__author--name">Gary Sebastian</span><br>
                   <span class="feedback__author--company">Apple Inc.</span>
@@ -357,8 +438,17 @@
             <li class="feedback-slider__list-item">
               <blockquote class="feedback">
                 <p class="feedback__quote">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
-
-                <img class="feedback__picture" src="img/bilbau.jpg" alt="Samantha Bilbau" width="80">
+                <picture class="feebback__picture">
+                  <source type="image/webp"
+                          sizes="80px"
+                          srcset="img/webp/bilbau-80.webp 80w,
+                                  img/webp/bilbau-160.webp 160w">
+                  <img  class="feedback__img" 
+                        src="img/bilbau-80.jpg"
+                        sizes="80px"
+                        srcset="img/bilbau-160.jpg 160w"
+                        alt="Samantha Bilbau">
+                </picture>
                 <cite class="feedback__author">
                   <span class="feedback__author--name">Samantha Bilbau</span><br>
                   <span class="feedback__author--company">Apple Inc.</span>
