@@ -1,11 +1,12 @@
 .screenshots-section {
   padding-top: 119px;
-  padding-bottom: 50px;
+  padding-bottom: 118px;
 
   background-color: $background-color-2;
 
   @include tablet {
     padding-top: 70px;
+    padding-bottom: 50px;
   }
 }
 
@@ -23,9 +24,7 @@
   margin-right: auto;
   margin-bottom: 76px;
 
-  font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
   text-align: center;
 }
 

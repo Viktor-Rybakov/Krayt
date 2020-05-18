@@ -25,7 +25,7 @@
   &:focus,
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 0 2px #f21780, 0 0 0 5px #ffffff;
+    box-shadow: 0 0 0 2px $link-hover, 0 0 0 5px #ffffff;
   }
 
   &:focus g,

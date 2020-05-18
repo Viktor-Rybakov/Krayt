@@ -248,7 +248,7 @@
   &:hover {
     outline: none;
 
-    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    background-image: linear-gradient(to right, $gradient-color-1 0%, $gradient-color-2 100%);
     border: none;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 
