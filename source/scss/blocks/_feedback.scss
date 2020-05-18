@@ -37,6 +37,8 @@
   width: 80px;
   height: 80px;
 
+  border-radius: 50%;
+
   @include max-width(420px) {
     justify-self: center;
   }
@@ -44,8 +46,6 @@
 
 .feedback__img {
   display: block;
-
-  border-radius: 50%;
 }
 
 .feedback__author {
@@ -57,17 +57,17 @@
   @include max-width(420px) {
     justify-self: center;
   }
+}
 
-  &--name {
-    color: $text-color-2;
-    font-family: Dosis;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-  }
+.feedback__name {
+  color: $text-color-2;
+  font-family: Dosis;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
 
-  &--company {
-    font-weight: 300;
-    line-height: 24px;
-  }
+.feedback__company {
+  font-weight: 300;
+  line-height: 24px;
 }

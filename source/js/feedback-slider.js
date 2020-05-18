@@ -7,8 +7,8 @@ let clickPrev = prev;
 let clickNext = next;
 let slideWidth = feedbackList.children[1].getBoundingClientRect().left - feedbackList.children[0].getBoundingClientRect().left;
 
-const FEEDBACK_NEXT = feedbackSlider.querySelector('.js-feedback-slider__button--forward');
-const FEEDBACK_PREV = feedbackSlider.querySelector('.js-feedback-slider__button--preview');
+const FEEDBACK_NEXT = feedbackSlider.querySelector('.js-feedback-slider__forward');
+const FEEDBACK_PREV = feedbackSlider.querySelector('.js-feedback-slider__preview');
 
 window.addEventListener('resize', function(){
   slideWidth = feedbackList.children[1].getBoundingClientRect().left - feedbackList.children[0].getBoundingClientRect().left;
