@@ -81,8 +81,8 @@ function images(){
 
 function webpImages() {
   return src('build/img/*.{png,jpg}')
-    .pipe(webp({quality: 95,
-                lossless: true}))
+    .pipe(webp({quality: 90,
+                lossless: false}))
     .pipe(dest('build/img/webp'));
 }
 
